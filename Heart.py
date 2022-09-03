@@ -45,6 +45,6 @@ log_model.fit(scaled_X_train, y_train)
 
 y_pred=log_model.predict(scaled_X_test)
 confusion_matrix(y_test, y_pred)
-#plot_confusion_matrix(log_model, scaled_X_test, y_test)
+plot_confusion_matrix(log_model, scaled_X_test, y_test)
 print(classification_report(y_test,y_pred))
-#plt.show()
+plt.show()
